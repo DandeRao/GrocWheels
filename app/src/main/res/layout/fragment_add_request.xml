@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView android:id="@+id/Item_label"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="Item"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                />
+
+            <TextView android:id="@+id/Needed_By_label"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="Needed By(Date)"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/needed_by"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_request"
+                android:layout_margin="10dp"
+                android:text="Request!!"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.GrocWheels_back4app.Fragments.RequestDetails"
+    >
+
+    <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="30dp"
+       android:paddingLeft="20dp"
+       >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+           android:text="Item"
+           android:layout_width="86dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/item_label"
+        />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textPersonName"
+               android:ems="10"
+               android:id="@+id/item"
+               android:paddingLeft="50dp"
+               android:layout_marginLeft="44dp" />
+       </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:text="Requested By"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/requestedBy_Label"
+           android:paddingTop="10dp"
+          />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPersonName"
+           android:ems="10"
+           android:id="@+id/requestedBy"
+           android:paddingLeft="50dp"
+           android:layout_marginLeft="44dp" />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <TextView
+           android:text="Requested On"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingTop="10dp"
+           android:id="@+id/requestedOn_Lable" />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPersonName"
+           android:ems="10"
+           android:id="@+id/requestedOn"
+           android:paddingLeft="50dp"
+           android:layout_marginLeft="44dp" />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="1">
+       <TextView
+           android:text="Needed By"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/neededBy_Label" />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPersonName"
+           android:ems="10"
+           android:id="@+id/neededBy"
+           android:paddingLeft="50dp"
+           android:layout_marginLeft="65dp"
+           android:layout_weight="1.57" />
+   </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <Button
+               android:text="Accept"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="45dp"
+               android:layout_marginTop="76dp"
+               android:id="@+id/accept"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentStart="true" />
+
+           <Button
+               android:text="Go Back"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="62dp"
+               android:id="@+id/goBack"
+               android:layout_marginStart="45dp"
+               android:layout_marginTop="76dp"
+               android:layout_alignParentEnd="true" />
+       </RelativeLayout>
+   </LinearLayout>
+
+</FrameLayout>

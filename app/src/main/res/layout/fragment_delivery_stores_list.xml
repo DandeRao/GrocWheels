@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="ltr"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/delivery_miles_seek_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Show stores within miles"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <!--
+               <Spinner
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/maxDistance"
+                   android:textColor="#000000"
+                   />-->
+        <SeekBar
+            android:id="@+id/delivery_store_maxDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="0.39"
+            android:backgroundTint="@android:color/background_dark" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list_view_delivery_store_list"
+        android:layout_width="wrap_content"
+        android:layout_height="298dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true" />
+
+</RelativeLayout>
+
+    </RelativeLayout>

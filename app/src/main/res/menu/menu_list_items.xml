@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="schemas.android.com/tools"
+    tools:context="com.allshareandroid.AllShareAndroid"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"  >
+
+    <item android:id="@+id/refresh_request"
+        android:title="Refresh"
+        android:icon="@drawable/refresh"
+        yourapp:showAsAction="always" />
+
+    <item android:id="@+id/add_request"
+        android:icon="@drawable/menu_add"
+        android:title="Add Request"
+        yourapp:showAsAction="always" />
+
+    <item android:id="@+id/menu_sign_out"
+        android:title="Sign Out"
+        yourapp:showAsAction="never" />
+
+    <item android:id="@+id/menu_profile"
+        android:title="Profile"
+        yourapp:showAsAction="never" />
+
+
+</menu>

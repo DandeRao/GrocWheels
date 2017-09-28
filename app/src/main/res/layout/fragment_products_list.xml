@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layoutDirection="ltr"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Items in the current Store"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="16sp" />-->
+        <!--&lt;!&ndash;-->
+               <!--<Spinner-->
+                   <!--android:layout_width="wrap_content"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:id="@+id/maxDistance"-->
+                   <!--android:textColor="#000000"-->
+                   <!--/>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+
+
+    <ListView
+        android:id="@+id/list_view_products_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:clickable="true" >
+
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cart_fab_product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="21dp"
+        android:theme="@style/AlertDialog.AppCompat.Light"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_cart" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ssearch_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="21dp"
+        android:theme="@style/AlertDialog.AppCompat.Light"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_search" />
+
+    <TextView
+        android:id="@+id/no_products_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50sp"
+        android:text="Sorry no products available in this store at this time"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
